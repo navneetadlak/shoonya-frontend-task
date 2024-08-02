@@ -1,6 +1,5 @@
-// src/components/Filter.js
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 const Filter = ({ onFilterChange, onSearchChange }) => {
   return (
@@ -13,7 +12,7 @@ const Filter = ({ onFilterChange, onSearchChange }) => {
       />
       <select
         className="border p-2 rounded mb-2 md:mb-0"
-        onChange={(e) => onFilterChange('type', e.target.value)}
+        onChange={(e) => onFilterChange("type", e.target.value)}
       >
         <option value="">All Types</option>
         <option value="Yoga">Yoga</option>
@@ -23,7 +22,7 @@ const Filter = ({ onFilterChange, onSearchChange }) => {
       <input
         type="date"
         className="border p-2 rounded"
-        onChange={(e) => onFilterChange('date', e.target.value)}
+        onChange={(e) => onFilterChange("date", e.target.value)}
       />
     </div>
   );

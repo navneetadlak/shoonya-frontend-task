@@ -1,6 +1,5 @@
-// src/components/Pagination.js
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 const Pagination = ({ currentPage, totalPages, onPageChange }) => {
   return (
@@ -15,7 +14,9 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
       {Array.from({ length: totalPages }, (_, i) => (
         <button
           key={i}
-          className={`border p-2 mx-1 ${currentPage === i + 1 ? 'bg-blue-500 text-white' : ''}`}
+          className={`border p-2 mx-1 ${
+            currentPage === i + 1 ? "bg-blue-500 text-white" : ""
+          }`}
           onClick={() => onPageChange(i + 1)}
         >
           {i + 1}
